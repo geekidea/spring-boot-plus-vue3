@@ -1,0 +1,43 @@
+/**
+* @description 修改element-ui组件默认样式
+*/
+:root{
+  --el-color-primary: #2e5cf6;
+}
+
+//--------------------------------------------------------------菜单
+.el-menu {
+  border: none !important;
+  .el-menu-item {
+    .menu-txt{
+      z-index: 1;
+    }
+    &.is-active {
+      color: #fff !important;
+
+      &:before {
+        background: var(--el-color-primary) !important;
+        border-radius: 3px;
+        clear: both;
+        content: "";
+        inset: 0 8px;
+        margin: 4px 0;
+        position: absolute;
+      }
+    }
+  }
+}
+//--------------------------------------------------------------卡片
+.el-card{
+  --el-card-border-color: var(--border-color-light);
+}
+
+//--------------------------------------------------------------布局容器
+.el-main{
+  --el-main-padding:10px;
+}
+
+//滚动条
+.el-scrollbar{
+  width: 100%;
+}

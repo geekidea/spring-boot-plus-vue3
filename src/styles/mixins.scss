@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------多行文本溢出 */
+@mixin text-ellipsis($line: 2) {
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+/* ----------------------------------------------------------文本不换行 */
+@mixin text-no-wrap() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* ----------------------------------------------------------滚动条 */
+@mixin scrollBar {
+  ::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: hsla(220, 4%, 58%, .3);
+  }
+}

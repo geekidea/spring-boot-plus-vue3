@@ -1,0 +1,15 @@
+
+
+.navbar-box-item{
+  .navbar-icon{
+    color: #3C3D3E;
+  }
+  &:hover{
+    .navbar-icon{
+      background: rgba(0, 0, 0, .04);
+      animation: logoAnimation 0.3s ease-in-out;
+    }
+  }
+}
+
+
